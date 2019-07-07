@@ -1,6 +1,6 @@
-function hendleЗlay(){
+function hendlePlay(){
     var audio = document.getElementById("myAudio");
-    audio.hendleЗlay();
+    audio.hendlePlay();
               }
 
 let audio = new Audio(e);
