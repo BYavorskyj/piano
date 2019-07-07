@@ -1,4 +1,4 @@
-let audio = new Audio('audio_file.mp3');
+let audio = new Audio('piano-notes/1.mp3');
 audio.play();
 
 const btns = document.getElementsByClassName('button');
