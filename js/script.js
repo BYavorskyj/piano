@@ -14,7 +14,7 @@ for (let i = 0; i < btns.length; i++) {
 window.addEventListener("keydown", handlePlay);
 
 
-btns.addEventListener('keydown', (e) => {
+window.addEventListener('keydown', (e) => {
     const keyA =65;
     const keyS =83;
     const keyD =68;
@@ -58,6 +58,3 @@ btns.addEventListener('keydown', (e) => {
             break;
     }
 } )
-
-
-btns.addEventListener('keydown', )
