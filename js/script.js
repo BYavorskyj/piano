@@ -14,14 +14,14 @@ for (let i = 0; i < btns.length; i++) {
 
 
 window.addEventListener('keydown', (e) => {
-    // const keyA =65;
-    // const keyS =83;
-    // const keyD =68;
-    // const keyF =70;
-    // const keyG =71;
-    // const keyH =72;
-    // const keyJ =74;
-    // const keyK =75;
+    const keyA =65;
+    const keyS =83;
+    const keyD =68;
+    const keyF =70;
+    const keyG =71;
+    const keyH =72;
+    const keyJ =74;
+    const keyK =75;
 
     switch (e.keyCode) {
         case keyA:
