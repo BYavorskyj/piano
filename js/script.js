@@ -5,9 +5,9 @@ function handlePlay(e) {
 }
 
 const btns = document.getElementsByClassName('button');
-for (let i = 0; i < btns.length; i++) {
-    btns[i].addEventListener('click', handlePlay)
-}
+// for (let i = 0; i < btns.length; i++) {
+//     btns[i].addEventListener('click', handlePlay)
+// }
 
 
 function handlePlay(noteId) {

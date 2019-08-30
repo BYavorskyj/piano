@@ -15,7 +15,18 @@ div, button {
     width: 40px;
     background-color: white;
     margin: 10px;
-    text-align: end;
+    text-align: center;
     align-items: flex-end;
 }
 
+.keypress{
+    transform: scale(1);
+}
+
+button:hover {
+    color: #fff;
+    background: #159051;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+}
