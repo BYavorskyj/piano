@@ -1,6 +1,9 @@
+function handlePlay(noteId, keyCode) {
+    const  currentElement = document.querySelector(`button[data-key="${keyCode}"]`);
+    currentElement.classList.add('active')
+    setTimeout(()=>{currentElement.classList.remove('active');}, 300)
 
-function handlePlay(e) {
-    let audio = new Audio('piano-notes/' + e.target.dataset.n + '.mp3');
+    let audio = new Audio('piano-notes/' + noteId + '.mp3');
     audio.play();
 }
 
@@ -15,7 +18,7 @@ function handlePlay(noteId) {
     audio.play();
 }
 for (let i = 0; i < btns.length; i++) {
-    btns[i].addEventListener('click', () => handlePlay(e.target.dataset.n))
+        handlePlay(e.target.dataset.n, e.target.dataset.key) 
 }
 window.addEventListener('keydown', (e) => {
     const keyA = 65;
@@ -29,28 +32,28 @@ window.addEventListener('keydown', (e) => {
 
     switch (e.keyCode) {
         case keyA:
-            handlePlay(1);
+            handlePlay(1, e.keyCode);
             break;
         case keyS:
-            handlePlay(2);
+            handlePlay(2, e.keyCode);
             break;
         case keyD:
-            handlePlay(3);
+            handlePlay(3, e.keyCode);
             break;
         case keyF:
-            handlePlay(4);
+            handlePlay(4, e.keyCode);
             break;
         case keyG:
-            handlePlay(5);
+            handlePlay(5, e.keyCode);
             break;
         case keyH:
-            handlePlay(6);
+            handlePlay(6, e.keyCode);
             break;
         case keyJ:
-            handlePlay(7);
+            handlePlay(7, e.keyCode);
             break;
         case keyK:
-            handlePlay(8)
+            handlePlay(8, e.keyCode)
             break;
 
         default:
