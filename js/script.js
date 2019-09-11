@@ -8,18 +8,13 @@ function handlePlay(noteId, keyCode) {
 }
 
 const btns = document.getElementsByClassName('button');
-// for (let i = 0; i < btns.length; i++) {
-//     btns[i].addEventListener('click', handlePlay)
-// }
 
-
-function handlePlay(noteId) {
-    let audio = new Audio('piano-notes/' + noteId + '.mp3');
-    audio.play();
-}
 for (let i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', (e) => { 
         handlePlay(e.target.dataset.n, e.target.dataset.key) 
+    })
 }
+
 window.addEventListener('keydown', (e) => {
     const keyA = 65;
     const keyS = 83;
